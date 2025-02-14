@@ -6,9 +6,10 @@ import pdf from "../../Assets/../Assets/Tushar_Resume_SDE.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 
-pdfjs.GlobalWorkerOptions.workerSrc = 'pdf.worker.min.js'
+
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
@@ -35,7 +36,7 @@ function ResumeNew() {
 
         <Row className="resume">
           <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6}  />
           </Document>
 
         </Row>
