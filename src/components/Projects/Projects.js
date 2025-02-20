@@ -18,15 +18,39 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
-            {/* <ProjectCard
-              // imgPath={require("../../Assets/project1.png").default}
+            <ProjectCard
+              imgPath={require("../../Assets/Projects/brainboost.png")}
               isBlog={false}
-              title="Demo Project 1"
-              description="This is a demo project."
-              ghLink=""
-              demoLink=""
-            /> */}
+              title="Brain Boost"
+              description="Your AI-powered study assistant for accelerated learning"
+              ghLink="https://github.com/Tushar-024/brainboost"
+              demoLink="https://brainboost.tusharsingla.me/"
+            />
+
           </Col>
+
+          <Col md={4} className="project-card">
+          <ProjectCard
+              imgPath={require("../../Assets/home-main.svg").default}
+              isBlog={false}
+              title="Portfolio"
+              description="Personal Portfolio Website"
+              ghLink="https://github.com/Tushar-024/portfolio"
+              demoLink="https://tusharsingla.me/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+          <ProjectCard
+              imgPath={require("../../Assets/home-main.svg").default}
+              isBlog={false}
+              title="Tickit"
+              description="A todo app developed using Next.js and Node.js"
+              ghLink="https://github.com/Tushar-024/todo_app"
+              demoLink="https://Tickit.tusharsingla.me/"
+            />
+          </Col>
+
+
 
         </Row>
       </Container>
